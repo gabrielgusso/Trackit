@@ -9,7 +9,7 @@ export default function Header() {
     return(
         <Conteiner>
         <img src={logo} alt="logo"/>
-        <Profile src={user.image} alt="profile"/>
+        <Profile data-identifier="avatar" src={user.image} alt="profile"/>
         </Conteiner>
     )
 }
@@ -25,6 +25,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 0 18px 0 18px;
+z-index: 1;
 `
 const Profile = styled.img`
 width: 51px;
